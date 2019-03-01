@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*-----------------------------reset--------------------------  */
+
+*{
+	box-sizing: border-box;
+}
+
+header {
+	background-size: cover;
+	background-image: url("tatte.png");
+	height:650px;
+}
+
+header nav li a{
+	padding:10px;
+	float:left;
+	color:white;
+	text-decoration: none;
+}
+header nav ul{
+	margin: 45px;
+}
+header .rightNav{
+	margin-left:80%;
+}
+
+header img{
+	width: 17%;
+	margin: 160px 0 0 42%;
+}
+
+form{
+	margin-left: 142px;
+}
+input{
+	width:40%;
+}
+button{
+	background-color: red;
+}
+.fa-bars{
+	display:none;
+}
+.services{
+	float: left;
+	width: 100%;
+	float: left;
+	margin-left: 29%;
+}
+.services li{
+	float:left;
+	color:white;
+	width: 9%;
+margin: 11px;
+}
+.photoCred{
+	margin-top:340px;
+}
+
+header p{
+	color:white;
+	text-align: center;
+}
+.locations{
+	height:140px;
+	text-align: center;
+	margin-left: 10px;
+}
+.locations h2{
+	color:red;
+	font-weight: bold;
+	margin: 15px;
+	font-size: 20px;
+}
+.locations li{
+	float:left;
+	text-align: center;
+	margin:10px;
+}
+
+.locations> ul {
+	text-align: center;
+	margin: 0 0 0 320px;
+}
+
+body > h2{
+	text-align: center;
+	color:red;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+article{
+	width:20%;
+	float:left;
+	margin-left: 10%;
+	margin-bottom: 25px;
+
+}
+article img{
+	width:100%;
+	height:200px;
+}
+article ul{
+	float: left;
+	border: 1px solid lightgrey;
+	width:100%;
+	padding:3%;
+}
+article .fa-fire{
+	color:red;
+}
+article li{
+	padding:3px;
+}
+article li a{
+	color:blue;
+	font-weight: bold;
+	text-decoration: none;
+}
+article li:nth-of-type(5){
+	color:red;
+}
+footer{
+	width: 97%;
+	height: 230px;
+	background-color: lightgrey;
+	border-bottom: 2px solid black;
+	margin-left: 22px;
+	float:left;
+}
+footer h2{
+	color: red;
+	font-size: 22px;
+	padding: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+footer section{
+	width:100%;
+}
+figure{
+	width: 15%;
+	float: left;
+	padding: 15px;
+	background-color: white;
+	margin: 15px 0 15px 7%;
+}
+figure img{
+	width:100%;
+	height:50px;
+}
+figure figcaption{
+text-align: center;
+}
+
+/*---------- Media Query----------  */
+@media only screen and (max-width:768px){
+
+	.fa-bars{
+		font-size: 25px;
+		color: white;
+	}
+	header{
+		height:400px;
+	}
+	header img {
+    width: 17%;
+    margin: 72px 0 0 55%;
+	}
+	.photoCred{
+		margin-top:85px;
+	}
+	.services{
+		display:none;
+	}
+
+	footer{
+		display: none;
+	}
+
+	article{
+		width:100%;
+	}
+	article img{
+		display:none;
+	}
+	article ul{
+		border: none;
+		text-align:center;
+	}
+
+	.locations{
+		display:none;
+	}
+
+	header nav{
+		display:none;
+	}
+	header .services{
+		width:100%;
+	}
+	h2{
+		display: none;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+	input {
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 5%;
+	}
+	.locations{
+		display: none;
+	}
+	header img {
+    width: 17%;
+    margin: 10px 0 0 43%;
+	}
+
+	.services {
+		float: left;
+		width: 100%;
+		margin: 55px 0 0 40%;
+	}
+	.photoCred {
+		margin-left: 17%;
+		margin-top: 231px;
+	}
+}
